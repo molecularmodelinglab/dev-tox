@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request, abort, Response, jsonify
 
 import sys
-sys.path.append('/home/jwellni_unc_edu/dev-tox')
+sys.path.append('/home/jwellni_unc_edu/dev-tox-V2')
 from dev_tox.dev_tox import MODEL_DICT
 
-sys.path.append('/home/jwellni_unc_edu/dev-tox/Webserver')
+sys.path.append('/home/jwellni_unc_edu/dev-tox-V2/Webserver')
 from smiles import get_molecule_data_from_smiles
 from csv_smiles import get_csv_from_smiles
 
@@ -44,7 +44,7 @@ def smiles_csv():
 
     num_models = sum([val for key, val in options.items() if key not in ["calculate_ad", "make_prop_img"]])
 
-    if len(smiles) * num_models > 100:
+    if len(smiles) * num_models > 400:
         return abort(413)
 
     csv = get_csv_from_smiles(request.json.get('smiles'), request.json.get('options'))

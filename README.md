@@ -49,6 +49,7 @@ Visit http://127.0.0.1:5000 in your browser.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Reference
-
+```
 DeTox: an In-Silico Alternative to Animal Testing for Predicting Developmental Toxicity Potential. Ricardo Scheufen Tieghi, Marielle Rath, José Teófilo Moreira-Filho, James Wellnitz, Holli-Joi Martin, Kathleen Gates, Helena T. Hogberg, Nicole Kleinstreuer, Alexander Tropsha, Eugene N. Muratov.
 
+```

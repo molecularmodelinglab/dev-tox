@@ -2,23 +2,7 @@
 
 Welcome to DeTox, an in-silico tool designed to replace animal testing by leveraging computational methods to predict developmental toxicity. This repository includes code for data ingestion, preprocessing, model inference, and a user-friendly web interface.
 
-## Repository Structure
-
-dev-tox/
-├── .vscode/        # Editor-specific configurations (e.g., launch and debug settings for VSCode)
-├── dev_tox/        # Core Python code for scraping, preprocessing, and inference
-├── models/         # Pre-trained machine learning models for toxicity prediction
-├── Webserver/      # Flask-based web interface for DeTox
-├── requirements.txt# List of Python dependencies
-└── README.md       # Project documentation
-
-## Objective
-
-DeTox was created to serve as a freely available, open-source platform for the prediction of chemical-induced developmental toxicity based on molecular structure. The model is built with machine learning techniques and can be accessed via a web interface or run locally.
-
-## Quickstart
-
-Prerequisites
+## Prerequisites
 	•	Python ≥ 3.8
 	•	Git
 
@@ -26,10 +10,11 @@ Prerequisites
 
 Clone the repository and install dependencies:
 
+```
 git clone https://github.com/your-username/dev-tox.git
 cd dev-tox
 pip install -r requirements.txt
-
+```
 ## Usage
 
 Using the Web Scraping Module

@@ -59,8 +59,8 @@ Filters and retains articles meeting either of the following criteria:
 After execution, the script generates the following Excel files in the Scrapper_results folder:
 
 File	Description
-Scraped_Articles_Trimester.xlsx	Raw scraped data for all keywords
-Curated_Compounds_Trimester.xlsx	Filtered articles with experimental context
+Scraped_Articles_Trimester.xlsx	 -> Raw scraped data for all keywords
+Curated_Compounds_Trimester.xlsx ->	Filtered articles with experimental context
 ```
 
 ⸻

@@ -11,7 +11,7 @@ pip install pandas beautifulsoup4 requests openpyxl
 
 # 📁 Input File Format
 ```
-Prepare an Excel file named keywords_example.xlsx with a column titled Compound_name containing the list of compounds you wish to search on PubMed.
+Prepare an Excel file named keywords_example.xlsx with a column titled "Compound_name" containing the list of compounds you wish to search on PubMed.
 
 Example:
 
@@ -30,9 +30,9 @@ ibuprofen
 	1.	Place your keywords_example.xlsx in the same directory as the script.
 	2.	Execute the script in your terminal or IDE:
 
-python your_script_name.py
+Execute the file "Webscraper_Pubmed.ipynb
 
-The script will scrape the first 3 search results per keyword from PubMed and stop after 600 compounds.
+The script will scrape the first 3 search results per keyword from PubMed and stop after your list finished or up to 600 compounds.
 ```
 ⸻
 

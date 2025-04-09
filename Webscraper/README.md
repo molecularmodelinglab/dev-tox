@@ -10,16 +10,17 @@ pip install pandas beautifulsoup4 requests openpyxl
 ⸻
 
 # 📁 Input File Format
-
+```
 Prepare an Excel file named keywords_example.xlsx with a column titled Compound_name containing the list of compounds you wish to search on PubMed.
 
 Example:
 
 Compound_name
+
 aspirin
 paracetamol
 ibuprofen
-
+```
 
 
 ⸻

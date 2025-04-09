@@ -52,65 +52,25 @@ Model Inference
 
 The prediction pipeline uses pre-trained models stored in the models/ directory.
 
-To run a toxicity prediction on a batch of molecules:
-
-python dev_tox/predict.py 
-
---input compound_data.csv 
---model models/dtox_model.pkl 
---output predictions.csv
-
 ### Arguments:
 	•	--input: CSV file containing compound data.
 	•	--model: Path to the pre-trained model file.
 	•	--output: Path to save the prediction results.
 
-Running the Web App
+## Running the Web App
 
 The online web tool can be accessed here:
 
-https://detox.mml.unc.edu/
+# https://detox.mml.unc.edu/
 
-The Webserver/ folder contains a Flask application that allows users to interact with DeTox via a web interface.
+The Webserver/.. folder contains a Flask application that allows users to interact with DeTox via a web interface.
 
-Locally running the Webserver
+### Locally running the Webserver
 
 cd Webserver
 python app.py
 
 Visit http://127.0.0.1:5000 in your browser.
-
-Folder Descriptions
-	•	dev_tox/
-	•	scraper.py: Retrieves molecular data via web APIs.
-	•	predict.py: Loads model and performs prediction.
-	•	preprocess.py: Normalizes and formats input data.
-	•	utils.py: Utility functions (e.g., SMILES validation).
-	•	models/
-	•	Contains serialized machine learning models (.pkl).
-	•	Include descriptors used for training to ensure reproducibility.
-	•	Webserver/
-	•	app.py: Flask application.
-	•	templates/: HTML templates.
-	•	static/: CSS and JS assets.
-
-## Example Workflow
-
-Step 1: Web scraping
-
-python dev_tox/scraper.py --input input.csv --output data.csv
-
-Step 2: Run prediction
-
-python dev_tox/predict.py 
-
---input data.csv 
---model models/dtox_model.pkl --output results.csv
-
-Step 3 (Optional): Use Web App
-
-cd Webserver
-python app.py
 
 
 ## License

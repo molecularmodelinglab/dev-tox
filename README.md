@@ -17,30 +17,16 @@ pip install -r requirements.txt
 ```
 ## Usage
 
-Using the Web Scraping Module
-
 The scraping tool is implemented in the dev_tox/scraper.py file.
 
 ## Running the Scraper
 
-The scraper retrieves compound information from online databases for downstream model processing.
-
-python dev_tox/scraper.py --input input_smiles.csv --output compound_data.csv
-
-Arguments:
-	•	--input: CSV file with a column of SMILES strings.
-	•	--output: Path to save the extracted data (e.g., physicochemical properties, identifiers).
-
-Ensure your input file is in proper format with a header SMILES.
-
-Model Inference
-
-The prediction pipeline uses pre-trained models stored in the models/ directory.
-
-### Arguments:
-	•	--input: CSV file containing compound data.
-	•	--model: Path to the pre-trained model file.
-	•	--output: Path to save the prediction results.
+The scraper retrieves compound information from PubMed for downstream model processing.
+```
+1. Open python Webscraper/Webscraper_Pubmed.ipynb
+2. Add compounds of interest and keywords to the input .csv file
+3. Receive results in the Scrapper_results folder.
+```
 
 ## Running the Web App
 
